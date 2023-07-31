@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <!-- <link rel="stylesheet" href="./images/icons.svg" /> -->
     <title>WebStudio</title>
   </head>
@@ -25,8 +26,8 @@
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo link" href="./index.html"
-            >Web<span>Studio</span></a
-          >
+            >Web<span>Studio</span>
+          </a>
           <ul class="header-list list">
             <li>
               <a class="header-item link current" href="./index.html">Studio</a>
@@ -48,17 +49,105 @@
               <a
                 class="header-contacts-item link"
                 href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+                >info@devstudio.com
+              </a>
             </li>
 
             <li>
-              <a class="header-contacts-item link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
+              <a class="header-contacts-item link" href="tel:+110001111111">
+                +11 (000) 111-11-11
+              </a>
             </li>
           </ul>
         </address>
+        <button class="header-modal-button" type="button" data-menu-open>
+          <svg class="header-modal-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-modal-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobille-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="modal-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobille-menu-list list">
+            <li>
+              <a class="mobille-menu-item link activ" href="./index.html">
+                Studio
+              </a>
+            </li>
+
+            <li>
+              <a class="mobille-menu-item link" href="./portfolio.html">
+                Portfolio
+              </a>
+            </li>
+
+            <li>
+              <a class="mobille-menu-item link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="mobille-menu-contacts-list list">
+            <li>
+              <a
+                class="mobille-menu-contacts-tel link"
+                href="tel:+110001111111"
+              >
+                +11 (000) 111-11-11
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="mobille-menu-contacts-email link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com
+              </a>
+            </li>
+          </ul>
+
+          <ul class="mobille-menu-socials-list list">
+            <li class="mobille-menu-socials-item">
+              <a href="https://www.instagram.com/" class="mobille-menu-ref">
+                <svg class="mobille-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobille-menu-socials-item">
+              <a href="https://twitter.com/" class="mobille-menu-ref">
+                <svg class="mobille-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobille-menu-socials-item">
+              <a href="https://uk-ua.facebook.com/" class="mobille-menu-ref">
+                <svg class="mobille-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobille-menu-socials-item">
+              <a href="https://linkedin.com/" class="mobille-menu-ref">
+                <svg class="mobille-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -82,7 +171,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="page-subtitle">Strategy</h3>
+              <h3 class="description-title">Strategy</h3>
               <p class="page-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -95,7 +184,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="page-subtitle">Punctuality</h3>
+              <h3 class="description-title">Punctuality</h3>
               <p class="page-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -108,7 +197,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="page-subtitle">Diligence</h3>
+              <h3 class="description-title">Diligence</h3>
               <p class="page-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -121,7 +210,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="page-subtitle">Technologies</h3>
+              <h3 class="description-title">Technologies</h3>
               <p class="page-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -136,11 +225,18 @@
           <h2 class="page-title">What are we doing</h2>
           <ul class="doing-list list">
             <li class="doing-item">
-              <img src="./images/mac.jpg" alt="mac" width="360" height="300" />
+              <img
+                srcset="./images/mac.jpg 1x, ./images/mac2x.jpg 2x"
+                src="./images/mac.jpg"
+                alt="mac"
+                width="360"
+                height="300"
+              />
             </li>
 
             <li class="doing-item">
               <img
+                srcset="./images/phones.jpg 1x, ./images/phones2x.jpg 2x"
                 src="./images/phones.jpg"
                 alt="phones"
                 width="360"
@@ -150,6 +246,7 @@
 
             <li class="doing-item">
               <img
+                srcset="./images/hand-ph.jpg 1x, ./images/hand-ph2x.jpg 2x"
                 src="./images/hand-ph.jpg"
                 alt="hand-ph"
                 width="360"
@@ -166,6 +263,7 @@
           <ul class="team-list list">
             <li class="team-list-item">
               <img
+                srcset="./images/mark.jpg 1x, ./images/mark2x.jpg 2x"
                 src="./images/mark.jpg"
                 alt="mark"
                 width="264"
@@ -179,38 +277,46 @@
                   <li class="team-block-item">
                     <a href="https://www.instagram.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="team-block-item">
                     <a href="https://twitter.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="team-block-item">
                     <a href="https://uk-ua.facebook.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="team-block-item">
                     <a href="https://linkedin.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
             </li>
 
             <li class="team-list-item">
-              <img src="./images/tom.jpg" alt="tom" width="264" height="260" />
+              <img
+                srcset="./images/tom.jpg 1x, ./images/tom2x.jpg 2x"
+                src="./images/tom.jpg"
+                alt="tom"
+                width="264"
+                height="260"
+              />
               <div class="team-item-block">
                 <h3 class="page-subtitle team-subtitle">Tom Ford</h3>
                 <p class="page-text team-text">Frontend Developer</p>
@@ -219,31 +325,33 @@
                   <li class="team-block-item">
                     <a href="https://www.instagram.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="team-block-item">
                     <a href="https://twitter.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="team-block-item">
                     <a href="https://uk-ua.facebook.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="team-block-item">
                     <a href="https://linkedin.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -251,6 +359,7 @@
 
             <li class="team-list-item">
               <img
+                srcset="./images/camila.jpg 1x, ./images/camila2x.jpg 2x"
                 src="./images/camila.jpg"
                 alt="camila"
                 width="264"
@@ -263,31 +372,33 @@
                   <li class="team-block-item">
                     <a href="https://www.instagram.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="team-block-item">
                     <a href="https://twitter.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="team-block-item">
                     <a href="https://uk-ua.facebook.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="team-block-item">
                     <a href="https://linkedin.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -295,6 +406,7 @@
 
             <li class="team-list-item">
               <img
+                srcset="./images/daniel.jpg 1x, ./images/daniel2x.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="daniel"
                 width="264"
@@ -307,31 +419,33 @@
                   <li class="team-block-item">
                     <a href="https://www.instagram.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="team-block-item">
                     <a href="https://twitter.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="team-block-item">
                     <a href="https://uk-ua.facebook.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
                   </li>
 
                   <li class="team-block-item">
                     <a href="https://linkedin.com/" class="team-ref">
                       <svg class="team-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use></svg
-                    ></a>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -550,5 +664,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
