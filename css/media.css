@@ -47,7 +47,7 @@
   }
 
   .header {
-    max-width: 768px;
+    /* max-width: 768px; */
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -176,13 +176,22 @@
     text-align: justify;
   }
 
+  .team-container {
+    max-width: 584px;
+  }
+
   .team-list {
     gap: 24px;
     row-gap: 64px;
   }
 
+  .customers-container {
+    max-width: 584px;
+  }
+
   .customers-list {
-    gap: 24px;
+    row-gap: 72px;
+    column-gap: 24px;
   }
 
   .customers-list-item {
@@ -190,6 +199,7 @@
   }
 
   .footer-cntnr {
+    max-width: 584px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -199,7 +209,6 @@
 
   .footer-text {
     margin: 0;
-    margin-left: 108px;
     align-items: flex-start;
   }
 
@@ -213,7 +222,6 @@
 
   .footer-sub {
     width: 453px;
-    margin-left: 108px;
   }
 
   .footer-sub-input {
@@ -230,10 +238,6 @@
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .header {
-    max-width: 1440px;
   }
 
   .header-container {
