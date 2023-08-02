@@ -617,15 +617,37 @@ img {
 /* __________________PORTFOLIO_______________ */
 
 .main-page {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.main-page-subtitle {
+  color: var(--navyblue);
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  line-height: 1.2;
+  letter-spacing: var(--text-spacing);
+  margin-bottom: 8px;
+}
+
+.main-page-text {
+  color: var(--slate);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
 }
 
 .filters-list {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 24px;
+  margin-bottom: 48px;
+  max-width: 378px;
 }
 
 .filters-btn {
@@ -638,7 +660,7 @@ img {
   line-height: var(--text-height);
   letter-spacing: 0.04em;
   cursor: pointer;
-  padding: 12px 24px;
+  padding: 8px 16px;
   border: 1px solid var(--cornflower);
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -701,13 +723,8 @@ img {
 
 .main-page-list {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
+  flex-direction: column;
   row-gap: 48px;
-}
-
-.main-page-item {
-  width: calc((100% - 48px) / 3);
 }
 
 .card-item-text {

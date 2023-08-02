@@ -198,6 +198,33 @@
     width: calc((100% - 48px) / 3);
   }
 
+  .filters-list {
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+    max-width: 768px;
+  }
+
+  .filters-btn {
+    padding: 12px 24px;
+  }
+
+  .main-page {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .main-page-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .main-page-item {
+    width: calc((100% - 24px) / 2);
+  }
+
   .footer-cntnr {
     max-width: 584px;
     display: flex;
@@ -343,6 +370,24 @@
 
   .customers-list-item {
     width: calc((100% - 120px) / 6);
+  }
+
+  .main-page {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .filters-list {
+    max-width: 1158px;
+    margin-bottom: 72px;
+  }
+
+  .main-page-list {
+    row-gap: 48px;
+  }
+
+  .main-page-item {
+    width: calc((100% - 48px) / 3);
   }
 
   .footer {
